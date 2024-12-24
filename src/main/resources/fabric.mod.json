@@ -1,0 +1,40 @@
+{
+	"schemaVersion": 1,
+	"id": "sempiternal",
+	"version": "${version}",
+	"name": "sempiternal",
+	"description": "This is a VERY DANGEROUS mod that is EXTREMELY DESTRUCTIVE.",
+	"authors": [
+		"Cinvyx"
+	],
+	"contact": {
+		"homepage": "https://fabricmc.net/",
+		"sources": "https://github.com/cinvyx/Sempiternal"
+	},
+	"license": "CC0-1.0",
+	"icon": "assets/sempiternal/icon.png",
+	"environment": "*",
+	"entrypoints": {
+		"main": [
+			"com.cinvyx.sempiternal.Sempiternal"
+		],
+		"fabric-datagen": [
+			"com.cinvyx.sempiternal.SempiternalDataGenerator"
+		],
+		"client": [
+			"com.cinvyx.sempiternal.SempiternalClient"
+		]
+	},
+	"mixins": [
+		"sempiternal.mixins.json"
+	],
+	"depends": {
+		"fabricloader": ">=0.16.9",
+		"minecraft": "~1.21",
+		"java": ">=21",
+		"fabric-api": "*"
+	},
+	"suggests": {
+		"another-mod": "*"
+	}
+}
